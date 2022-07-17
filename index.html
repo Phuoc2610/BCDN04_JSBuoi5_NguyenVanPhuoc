@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h3>Quản lý tuyển sinh</h3>
+        <div class="row">
+            <div class="col-4">
+                <input type="number" placeholder="Điểm chuẩn" id="inputDiemChuan">
+            </div>
+            <div class="form-group col-4">
+                <select class="form-control" id="inputKhuVuc">
+                    <option>Chọn khu vực</option>
+                    <option value="2">A</option>
+                    <option value="1">B</option>
+                    <option value="0.5">C</option>
+                </select>
+            </div>
+            <div class="form-group col-4">
+                <select class="form-control" id="inputDoiTuong">
+                    <option>Chọn đối tượng</option>
+                    <option value="2.5">1</option>
+                    <option value="1.5">2</option>
+                    <option value="1">3</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <input type="number" placeholder="Điểm môn thứ 1" id="inputDiem1">
+            </div>
+            <div class="col-4">
+                <input type="number" placeholder="Điểm môn thứ 2" id="inputDiem2">
+            </div>
+            <div class="col-4">
+                <input type="number" placeholder="Điểm môn thứ 3" id="inputDiem3">
+            </div>
+        </div>
+        <button type="button" id="btnTuyenSinh" class="btn btn-primary">Kết quả</button>
+        <p id="txtTuyenSinh" class="alert alert-success"></p>
+    </div>
+    <div class="container">
+        <h3>Tính tiền điện</h3>
+        <div class="row">
+            <div class="col-4">
+                <input type="text" placeholder="Họ và tên" id="inputName">
+            </div>
+            <div class="col-4">
+                <input type="number" placeholder="Nhập số kw" id="inputSoKW">
+            </div>
+        </div>
+        <button type="button" id="btnTinhKW" class="btn btn-primary">Tính tiền điện</button>
+        <p id="txtTinhKW" class="alert alert-success"></p>
+    </div>
+    <div class="container">
+        <h3>Tính thuế thu nhập cá nhân</h3>
+        <div class="row">
+            <div class="col-4">
+                <input type="text" placeholder="Nhập họ tên" id="inputTen">
+            </div>
+            <div class="col-4">
+                <input type="number" placeholder="Tổng thu nhập năm" id="inputThuNhap">
+            </div>
+            <div class="col-4">
+                <input type="number" placeholder="Số người phụ thuộc" id="inputSoNguoi">
+            </div>
+        </div>
+        <button type="button" id="btnTinhThue" class="btn btn-primary">Tính tiền thuế</button>
+        <p id="txtTinhThue" class="alert alert-success"></p>
+    </div>
+    <div class="container">
+        <h3>Tính tiền cáp</h3>
+        <div class="row">
+            <div class="form-group col-4">
+                <select class="form-control" id="inputKhachHang">
+                    <option>Chọn loại khách hàng</option>
+                    <option value="nhaDan">Nhà dân</option>
+                    <option value="doanhNghiep" >Doanh nghiệp</option>
+                </select>
+            </div>
+            <div class="col-4">
+                <input type="text" placeholder="Nhập mã khách hàng" id="inputMaKH">
+            </div>
+            <div class="col-4">
+                <input type="number" placeholder="Số kênh cao cấp" id="inputSoKenh">
+            </div>
+            <div class="col-4" id="soKetNoi">
+                <input type="number" placeholder="Số kết nối" id="inputSoKetNoi">
+            </div>
+        </div>
+        <button type="button" id="btnTinhCap" class="btn btn-primary">Tính tiền cáp</button>
+        <p id="txtTinhCap" class="alert alert-success"></p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
